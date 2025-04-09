@@ -5,6 +5,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
+    flex: 1;
 }
 
 .header ul{
@@ -34,18 +35,25 @@ body {
 .dropdown {
     z-index: 2;
 }
-
-#shirtBase {
+.shirt-preview {
     position: relative;
-    top: 0px;
+    justify-content: center;
+    align-items: center;
+    width: 645px;
+    height: 689px;
+}
+#shirtBase {
+    position: absolute;
+    top: 0;
     left: 0px;
     width: 645px;
     height: 689px;
-    z-index: 1;
+    z-index: 2;
   }
 
   #designOverlay {
     position: absolute;
+    top: 0;
     z-index: 2;
   }
 
@@ -61,4 +69,14 @@ button {
     flex-wrap: wrap;
     flex: 1;
     justify-content: center;
+    align-items: center;
+}
+
+.container {
+    justify-content: center;
+    padding: 10px;
+}
+#shirtLabel {
+    text-align: center;
+    font-weight: bold;
 }

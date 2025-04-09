@@ -14,20 +14,20 @@
             <li><a href="background.html">Backgrounds</a></li>
         </ul>
     </div>
-    <!-- <div class="shirt-preview"> -->
+    <div class="shirt-preview">
         <img id="shirtBase" src="./images/shirt-backs/White-Back.png" alt="White Back Tshirt Base">
-        <img id="designOverlay" src="./images/back-designs/Cartoon-pride.png" alt="Cartoon Map of USA with Pride Map Pins">
-        
-    <!-- </div> -->
-     <p id="shirtLabel">White</p>
+        <img id="designOverlay" src="./images/back-designs/Cartoon-pride.png" alt="Cartoon Map of USA with Pride Map Pins">    
+    </div>
+    <div class="container">
+    <p id="shirtLabel">White</p>
     <div class="dropdown">
-        <select id="shirtSelect">
+        <!-- <select id="shirtSelect">
             <option value="White-Back.png">White</option>
             <option value="Yellow-Back.png">Yellow</option>
-        </select>
+        </select> -->
         <select id ="designSelect">
             <option value="Cartoon-pride.png" data-label="White">Cartoon Pride</option>
-            <option value="Old Map-Pins.png" data-label="Yellow">old round pins</option>
+            <option value="Old-Map-Pins.png" data-label="Yellow">old round pins</option>
         </select>
     </div>
     <div class="color-select">
@@ -84,23 +84,23 @@
         <button class="shirt-button" data-shirt="Yellow-Back.png" data-label="Yellow" style="background-color:#ffe876"></button>
         <button class="shirt-button" data-shirt="Natural-Back.png" data-label="Natural" style="background-color:#f7e7c3"></button>
     </div>
-
+    </div>
     <script>
-        const shirtSelect = document.getElementById("shirtSelect");
+        // const shirtSelect = document.getElementById("shirtSelect");
         const designSelect = document.getElementById("designSelect");
         const shirtBase = document.getElementById("shirtBase");
         const designOverlay = document.getElementById("designOverlay");
         const buttons = document.querySelectorAll(".shirt-button");
         const shirtLabel = document.getElementById("shirtLabel");
 
-        shirtSelect.addEventListener("change", () => {
-            const selectedOption = shirtSelect.options[shirtSelect.selectedIndex];
-            const shirtFile = selectedOption.value;
-            const label = selectedOption.getAttribute("data-label");
+        // shirtSelect.addEventListener("change", () => {
+        //     const selectedOption = shirtSelect.options[shirtSelect.selectedIndex];
+        //     const shirtFile = selectedOption.value;
+        //     const label = selectedOption.getAttribute("data-label");
 
-            shirtBase.src = "./images/shirt-backs/" + shirtSelect.value;
-            shirtLabel.textContent = label;
-        });
+        //     shirtBase.src = "./images/shirt-backs/" + shirtSelect.value;
+        //     shirtLabel.textContent = label;
+        // });
 
         designSelect.addEventListener("change", () => {
             designOverlay.src = "./images/back-designs/" + designSelect.value;
