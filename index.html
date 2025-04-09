@@ -15,7 +15,7 @@
         </ul>
     </div>
     <!-- <div class="shirt-preview"> -->
-        <img id="shirtBase" src="./images/blank-shirts/White Back.png" alt="White Back Tshirt Base">
+        <img id="shirtBase" src="./images/shirt-backs/White Back.png" alt="White Back Tshirt Base">
         <img id="designOverlay" src="./images/back-designs/Cartoon pride.png" alt="Cartoon Map of USA with Pride Map Pins">
         
     <!-- </div> -->
@@ -42,7 +42,7 @@
         const buttons = document.querySelectorAll(".shirt-button")
 
         shirtSelect.addEventListener("change", () => {
-            shirtBase.src = "./images/blank-shirts/" + shirtSelect.value;
+            shirtBase.src = "./images/shirt-backs/" + shirtSelect.value;
         });
 
         designSelect.addEventListener("change", () => {
@@ -52,7 +52,7 @@
         buttons.forEach(button => {
             button.addEventListener("click", () => {
                 const shirtFile = button.getAttribute("data-shirt");
-                shirtBase.src = "./images/blank-shirts/" + shirtFile;
+                shirtBase.src = "./images/shirt-backs/" + shirtFile;
             })
         })
     </script>
