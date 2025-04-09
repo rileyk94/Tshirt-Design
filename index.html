@@ -19,6 +19,7 @@
         <img id="designOverlay" src="./images/back-designs/cartoon bright green star.png" alt="Cartoon Map of USA with Pride Map Pins" width="350" height="auto">
     </div>
     <select id="shirtSelect">
+        <option value="White Back.jpg">White</option>
         <option value="Ash Back.jpg">Ash</option>
         <option value="Vintage White Back.jpg">Vintage White</option>
         <option value="Silver Back.jpg">Silver</option>
@@ -43,11 +44,18 @@
         <option value="Military Green Back.jpg">Military Green</option>
         <option value="Olive Back.jpg">Olive</option>
         <option value="Heather Olive Back.jpg">Heather Olive</option>
-        <option value="Heather Green Back.jpg">Ash</option>
+        <option value="Heather Green Back.jpg">Heather Green</option>
     </select>
 
 
 
-    
+    <script>
+        const shirtSelect = document.getElementById("shirtSelect");
+        const shirtBase = document.getElementById("shirtBase");
+
+        shirtSelect.addEventListener("change", () => {
+            shirtBase.src = "./images/blank-shirts/" + shirtSelect.value;
+        });
+    </script>
 </body>
 </html>
