@@ -72,11 +72,16 @@ button {
     align-items: center;
 }
 
-.container {
-    justify-content: center;
-    padding: 10px;
-}
 #shirtLabel {
     text-align: center;
     font-weight: bold;
+}
+
+.dropdown {
+    text-align: center;
+    margin: 10px;
+}
+
+#designSelect {
+    text-align: center;
 }
