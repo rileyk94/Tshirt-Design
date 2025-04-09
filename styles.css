@@ -2,21 +2,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: salmon; */
     align-items: center;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
-.main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 5; /* keep it above background stuff */
-}
 .header ul{
     list-style-type: none;
     display: flex;
-    /* background-color: aqua; */
     gap: 30px;
     align-items: center;
     justify-content: center;
@@ -38,42 +31,29 @@ body {
     font-weight: bold;
 }
 
-.tshirt-preview {
-    position: relative;
-    z-index: 1;
-    width: 645px;
-    height: 689px;
-    border: 2px solid blue;
-  }
-
-#shirtBase,
-#designOverlay {
-    position: absolute;
-    top: 100px;
-    left: 0px;
-    /* width: 645px;
-    height: 689px; */
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.dropdown {
     z-index: 2;
-  }
-
-/* #shirtBase {
-    position:absolute;
-    border: 2px solid red;
-    z-index: 1;
-  }
-
-#designOverlay {
-    position: absolute;
-    border: 2px solid blue;
-    z-index: 2;
-    pointer-events: none;
+}
+/* .tshirt-preview {
+    border: 2px solid black;
   } */
 
-#shirtSelect
+#shirtBase,{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 645px;
+    height: 689px;
+    z-index: 1;
+  }
+
+  #designOverlay {
+    position: absolute;
+    z-index: 2;
+  }
+
+/* #shirtSelect
 #designSelect {
     position: relative;
-    z-index: 10;
-}
+    z-index: 1;
+} */
