@@ -4,6 +4,7 @@ body {
     justify-content: center;
     /* background-color: salmon; */
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .header ul{
@@ -23,4 +24,9 @@ body {
     padding-right: 15px;
     background-color: aqua;
     font-weight: bold;
+}
+
+#designOverlay {
+    width: 350px;
+    height: auto;
 }
