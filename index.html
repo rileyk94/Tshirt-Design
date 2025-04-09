@@ -25,13 +25,13 @@
             <option value="Yellow Back.png">Yellow</option>
         </select>
         <select id ="designSelect">
-            <option value="Cartoon pride.png">cartoon bright green star</option>
+            <option value="Cartoon pride.png">Cartoon Pride</option>
             <option value="Old Map Pins.png">old round pins</option>
         </select>
     </div>
     <div class="color-select">
-        <button id="White-Shirt"></button>
-        <button id="Yellow-Shirt"></button>
+        <button class="shirt-button" data-shirt="White Back.png" style="background-color:#f5f5f5"></button>
+        <button class="shirt-button" data-shirt="Yellow Back.png" style="background-color:#ffe876"></button>
     </div>
 
     <script>
@@ -39,6 +39,7 @@
         const designSelect = document.getElementById("designSelect");
         const shirtBase = document.getElementById("shirtBase");
         const designOverlay = document.getElementById("designOverlay");
+        const buttons = document.querySelectorAll(".shirt-button")
 
         shirtSelect.addEventListener("change", () => {
             shirtBase.src = "./images/blank-shirts/" + shirtSelect.value;
@@ -46,6 +47,13 @@
 
         designSelect.addEventListener("change", () => {
             designOverlay.src = "./images/back-designs/" + designSelect.value;
+        })
+
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                const shirtFile = button.getAttribute("data-shirt");
+                shirtBase.src = "./images/blank-shirts/" + shirtFile;
+            })
         })
     </script>
 </body>
