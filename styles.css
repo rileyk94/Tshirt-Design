@@ -40,6 +40,8 @@ body {
 
   #shirtBase {
     z-index: 1;
+    width: 775px;
+    height: 775px;
   }
 
   #designOverlay {
