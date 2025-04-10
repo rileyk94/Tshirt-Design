@@ -39,6 +39,9 @@ body {
     width: 100vh;
 }
 /*Shirt Overlay*/
+.cycle-buttons {
+    text-align: center;
+}
 .shirt-preview {
     min-width: 400px;
     max-width: 645px;
