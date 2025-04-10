@@ -95,6 +95,7 @@ button {
     flex: 1;
 }
 
+
 /* Css for Right side of Compare */
 #shirtBaseRight {
     position: absolute;
@@ -114,4 +115,25 @@ button {
   #shirtLabelRight {
     text-align: center;
     font-weight: bold;
+}
+
+#shirtLabelFL {
+    text-align: center;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+.right-choices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-choices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
