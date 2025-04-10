@@ -1,6 +1,6 @@
 /* main style for all pages */
 /*-------------------------------------------------------*/
-html, body {
+body {
     display: flex;
     flex-direction: column;
     gap: 15px;
