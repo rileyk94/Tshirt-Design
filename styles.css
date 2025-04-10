@@ -17,6 +17,9 @@ body {
     list-style-type: none;
     display: flex;
     gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
 }
 
 /*Styling the Header Buttons */
@@ -30,6 +33,7 @@ body {
     padding-right: 15px;
     background-color: aqua;
     font-weight: bold;
+    justify-content: center;
 }
 
 /* Single T-shirt Styling, front and back */
