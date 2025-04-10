@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    height: 100dvh;
+    min-height: 95dvh;
     align-items: center;
     margin: 0;
     padding: 0;
