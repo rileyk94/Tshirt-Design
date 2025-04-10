@@ -66,7 +66,7 @@ button {
 
 .color-select {
     display: flex;
-    width: 300px;
+    max-width: 300px;
     gap: 5px;
     flex-wrap: wrap;
     flex: 1;
@@ -94,3 +94,52 @@ button {
     margin: 10px;
     margin-top: 30px;
 }
+
+/*Compare Page*/
+/*------------------------*/
+
+/*Right side shirt properties*/
+.right .shirt-preview {
+    /* min-width: 400px; */
+    max-width: 645px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#shirtBaseRight {
+    position: absolute;
+    z-index: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+#designOverlayRight {
+    position: absolute;
+    z-index: 2;
+    max-width: 100%;
+    height: auto;
+}
+
+/*compare properties*/
+.main-compare {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.left .main-design {
+    width: 50%;
+    box-sizing: border-box;
+    
+}
+
+.right .main-design {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+/*left buttons*/
+
+
