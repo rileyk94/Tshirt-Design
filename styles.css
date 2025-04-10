@@ -4,8 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    min-height: auto;
-    min-width: 100vw;
+    height: calc(var(--vh, 1vh)*100);
     align-items: center;
     margin: 0;
     padding: 0;
