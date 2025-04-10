@@ -89,3 +89,8 @@ button {
 .main-design {
     display: flex;
 }
+
+.main-compare {
+    display: flex;
+    flex: 1;
+}
