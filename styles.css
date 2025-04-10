@@ -7,6 +7,9 @@ body {
     min-height: 100vh;
     min-width: auto;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 /* Main Header */
@@ -123,29 +126,39 @@ button {
 
 /*compare properties*/
 .main-compare {
-    width: 100%;
+    width: 100vw;
     display: flex;
     box-sizing: border-box;
-    margin: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    flex: 1 1 auto;
+    padding: 10px;
     
 }
 
 .left .main-design {
+    display: flex;
     width: 50%;
-    box-sizing: border-box;    
+    box-sizing: border-box;
+    flex: 1;    
 }
 
 .left {
-    background-color: lightblue;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
 }
 .right .main-design {
+    display: flex;
     width: 50%;
     box-sizing: border-box;
+    flex: 1;
 }
 
 .right {
-    background-color: lightcoral;
-    border: solid 2px blue;
+    display: flex;
+    flex: 1;
+    box-sizing: border-box;
 }
 
 /*left buttons*/
