@@ -1,5 +1,5 @@
 /* main style for all pages */
-/*--------------------------*/
+/*-------------------------------------------------------*/
 body {
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@ body {
 }
 
 /* Single T-shirt Styling, front and back */
-/*----------------------------------------*/
+/*-------------------------------------------------------------------*/
 .main-design {
     display: flex;
     width: 100vh;
@@ -99,7 +99,7 @@ button {
 }
 
 /*Compare Page*/
-/*------------------------*/
+/*-----------------------------------------------------------------*/
 
 /*Right side shirt properties*/
 .right .shirt-preview {
@@ -161,6 +161,18 @@ button {
     box-sizing: border-box;
 }
 
-/*left buttons*/
+/*dropdown styling*/
+.backleft .dropdown,
+.backright .dropdown,
+.frontleft .dropdown,
+.frontright .dropdown {
+    text-align: center;
+}
 
-
+.frontleft #designSelectFL,
+.frontright #designSelectFR,
+.backright #designSelectRight,
+.backleft #designSelect {
+    text-align: center;
+    font-weight: bold;
+}
