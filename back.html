@@ -93,35 +93,25 @@
         </div>
         </div>
     </div>
-    <script>
-        // const shirtSelect = document.getElementById("shirtSelect");
-        const designSelect = document.getElementById("designSelect");
-        const shirtBase = document.getElementById("shirtBase");
-        const designOverlay = document.getElementById("designOverlay");
-        const buttons = document.querySelectorAll(".shirt-button");
-        const shirtLabel = document.getElementById("shirtLabel");
+    <script src="back.js">
+        // const designSelect = document.getElementById("designSelect");
+        // const shirtBase = document.getElementById("shirtBase");
+        // const designOverlay = document.getElementById("designOverlay");
+        // const buttons = document.querySelectorAll(".shirt-button");
+        // const shirtLabel = document.getElementById("shirtLabel");
 
-        // shirtSelect.addEventListener("change", () => {
-        //     const selectedOption = shirtSelect.options[shirtSelect.selectedIndex];
-        //     const shirtFile = selectedOption.value;
-        //     const label = selectedOption.getAttribute("data-label");
+        // designSelect.addEventListener("change", () => {
+        //     designOverlay.src = "./images/back-designs/" + designSelect.value;
+        // })
 
-        //     shirtBase.src = "./images/shirt-backs/" + shirtSelect.value;
-        //     shirtLabel.textContent = label;
-        // });
-
-        designSelect.addEventListener("change", () => {
-            designOverlay.src = "./images/back-designs/" + designSelect.value;
-        })
-
-        buttons.forEach(button => {
-            button.addEventListener("click", () => {
-                const shirtFile = button.getAttribute("data-shirt");
-                const label = button.getAttribute("data-label");
-                shirtBase.src = "./images/shirt-backs/" + shirtFile;
-                shirtLabel.textContent = label;
-            })
-        })
+        // buttons.forEach(button => {
+        //     button.addEventListener("click", () => {
+        //         const shirtFile = button.getAttribute("data-shirt");
+        //         const label = button.getAttribute("data-label");
+        //         shirtBase.src = "./images/shirt-backs/" + shirtFile;
+        //         shirtLabel.textContent = label;
+        //     })
+        // })
 
     </script>
 </body>
