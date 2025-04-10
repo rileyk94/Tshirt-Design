@@ -127,19 +127,25 @@ button {
     display: flex;
     box-sizing: border-box;
     margin: 10px;
-    background-color: lightcoral;
+    
 }
 
 .left .main-design {
     width: 50%;
-    box-sizing: border-box;
-    background-color: lightblue;
-    
+    box-sizing: border-box;    
 }
 
+.left {
+    background-color: lightblue;
+}
 .right .main-design {
     width: 50%;
     box-sizing: border-box;
+}
+
+.right {
+    background-color: lightcoral;
+    border: solid 2px blue;
 }
 
 /*left buttons*/
