@@ -127,11 +127,13 @@ button {
     display: flex;
     box-sizing: border-box;
     margin: 10px;
+    background-color: lightcoral;
 }
 
 .left .main-design {
     width: 50%;
     box-sizing: border-box;
+    background-color: lightblue;
     
 }
 
