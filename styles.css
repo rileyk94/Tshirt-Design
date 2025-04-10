@@ -94,3 +94,24 @@ button {
     display: flex;
     flex: 1;
 }
+
+/* Css for Right side of Compare */
+#shirtBaseRight {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 645px;
+    height: 689px;
+    z-index: 2;
+  }
+
+  #designOverlayRight {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+
+  #shirtLabelRight {
+    text-align: center;
+    font-weight: bold;
+}
