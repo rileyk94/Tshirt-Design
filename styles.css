@@ -85,3 +85,7 @@ button {
 #designSelect {
     text-align: center;
 }
+
+.main-design {
+    display: flex;
+}
