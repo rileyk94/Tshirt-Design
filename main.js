@@ -10,12 +10,12 @@ const frontImages = ["Steampunk-round-badge.png","30-green-badge.png","Drawn-rou
                     "steampunk-badge-light.png", "steampunk-large-light.png","30-green-badge-light.png","30-green-large-light.png","30-vect0r-badge-light.png","30-vect0r-large-light.png","cartoon-30-light.png","cartoon-light.png",
                     "drawn-badge-light.png","drawn-large-light.png","old-pin-front-light.png","stay-salty-badge-light.png","stay-salty-large-light.png","vector-compass-badge-light.png","vector-compass-large-light.png",
                     "wreath-badge-light.png","wreath-large-light.png",]
-const backImages = ["Cartoon-pride.png","Cartoon-Red-Pins.png","cartoon-stars.png","Old-Map-Flags.png","Old-Map-Pins.png","pride-map-pins.png"]
+const backImages = ["Old-Map-Pins.png","Old-Map-Flags.png","pride-map-pins.png","cartoon-pins.png","cartoon-pride-1.png","cartoon-pride-2.png", "cartoon-pride-3.png", "cartoon-yellow-stars.png", "cartoon-marker.png",]
 
 //Main Button Functions
 let isFront = true;
 let currentColor = "White";
-let currentDesign = isFront ? "Steampunk-round-badge" : "Cartoon-pride";
+let currentDesign = isFront ? "Steampunk-round-badge" : "Old-Map-Pins";
 
 const toggleBtn = document.getElementById("toggleView")
 

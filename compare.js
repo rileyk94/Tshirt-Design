@@ -16,7 +16,7 @@ const shirtSideRight = document.getElementById("shirtSideRight")
 //Main Button Functions
 let isFront = true;
 let currentColor = "White";
-let currentDesign = isFront ? "Steampunk-round-badge" : "Cartoon-pride";
+let currentDesign = isFront ? "Steampunk-round-badge" : "Old-Map-Pins";
 
 window.addEventListener("load", () => {
     // Reset both dropdowns to first option
@@ -125,7 +125,7 @@ const backImagesRight = ["Cartoon-pride.png","Cartoon-Red-Pins.png","cartoon-sta
 //Main Button Functions
 let isFrontRight = true;
 let currentColorRight = "White";
-let currentDesignRight = isFrontRight ? "Steampunk-round-badge" : "Cartoon-pride";
+let currentDesignRight = isFrontRight ? "Steampunk-round-badge" : "Old-Map-Pins";
 
 const toggleBtnRight = document.getElementById("toggleViewRight")
 
