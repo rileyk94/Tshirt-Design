@@ -1,10 +1,15 @@
 const designSelectFront = document.getElementById("designSelectFront");
 const designSelectBack = document.getElementById("designSelectBack");
+const designSelectLight = document.getElementById("designSelectLight")
 const shirtBase = document.getElementById("shirtBase");
 const designOverlay = document.getElementById("designOverlay");
 const buttons = document.querySelectorAll(".shirt-button");
 const shirtLabel = document.getElementById("shirtLabel");
-const frontImages = ["Steampunk-round-badge.png","30-green-badge.png","Drawn-round-badge.png","line-round-badge.png","lines-badge.png","pride-badge.png","stay-salty-badge.png","wreath-badge.png","Steampunk-round-large.png","30-green-large.png","Drawn-round-large.png","line-round-large.png","lines-large.png","stay-salty-large.png","wreath-large.png","cartoon-front-anniversary.png","cartoon-front-overlay.png","old-flag-front.png","old-pin-front.png"]
+const frontImages = ["Steampunk-round-badge.png","30-green-badge.png","Drawn-round-badge.png","line-round-badge.png","lines-badge.png","pride-badge.png","stay-salty-badge.png","wreath-badge.png","Steampunk-round-large.png",
+    "30-green-large.png","Drawn-round-large.png","line-round-large.png","lines-large.png","stay-salty-large.png","wreath-large.png","cartoon-front-anniversary.png","cartoon-front-overlay.png","old-pin-front.png",
+    "steampunk-badge-light.png", "steampunk-large-light.png","30-green-badge-light.png","30-green-large-light.png","30-vect0r-badge-light.png","30-vect0r-large-light.png","cartoon-30-light.png","cartoon-light.png",
+    "drawn-badge-light.png","drawn-large-light.png","old-pin-front-light.png","stay-salty-badge-light.png","stay-salty-large-light.png","vector-compass-badge-light.png","vector-compass-large-light.png",
+    "wreath-badge-light.png","wreath-large-light.png",]
 const backImages = ["Cartoon-pride.png","Cartoon-Red-Pins.png","cartoon-stars.png","Old-Map-Flags.png","Old-Map-Pins.png","pride-map-pins.png"]
 const shirtSideLeft = document.getElementById("shirtSideLeft")
 const shirtSideRight = document.getElementById("shirtSideRight")
@@ -17,18 +22,22 @@ window.addEventListener("load", () => {
     // Reset both dropdowns to first option
     document.getElementById("designSelectFront").selectedIndex = 0;
     document.getElementById("designSelectBack").selectedIndex = 0;
+    document.getElementById("designSelectLight").selectedIndex = 0;
     document.getElementById("rightDesignSelectFront").selectedIndex = 0;
     document.getElementById("rightDesignSelectBack").selectedIndex = 0;
+    document.getElementById("designSelectLightRight").selectedIndex = 0;
   
     // Set initial design based on default selector
     if (isFront) {
         currentDesign = document.getElementById("designSelectFront").value;
+        currentDesign = document.getElementById("designSelectLight").value;
     } else {
         currentDesign = document.getElementById("designSelectBack").value;
     }
 
     if (isFrontRight) {
         currentDesignRight = document.getElementById("rightDesignSelectFront").value;
+        currentDesign = document.getElementById("designSelectLightRight").value;
     } else {
         currentDesignRight = document.getElementById("rightDesignSelectBack").value;
     }
@@ -57,11 +66,13 @@ toggleBtn.addEventListener("click", () => {
 function updateDesignSelectorVisibility() {
     if(isFront) {
         designSelectFront.style.display = "block";
+        designSelectLight.style.display = "block";
         designSelectBack.style.display = "none";
         shirtSideLeft.textContent = "Front"
     } else {
         designSelectFront.style.display = "none"
         designSelectBack.style.display = "block"
+        designSelectLight.style.display = "none";
         shirtSideLeft.textContent = "Back"
     }
 }
@@ -89,6 +100,11 @@ designSelectFront.addEventListener("change", () => {
     if (isFront) updateDesignImage();
 })
 
+designSelectLight.addEventListener("change", () => {
+    currentDesign = designSelectLight.value;
+    if (isFront) updateDesignImage();
+})
+
 designSelectBack.addEventListener("change", () => {
     currentDesign = designSelectBack.value;
     if (!isFront) updateDesignImage();
@@ -98,6 +114,7 @@ designSelectBack.addEventListener("change", () => {
 //-------------------------------------------------------------------------
 const rightDesignSelectFront = document.getElementById("rightDesignSelectFront");
 const rightDesignSelectBack = document.getElementById("rightDesignSelectBack");
+const designSelectLightRight = document.getElementById("designSelectLightRight")
 const shirtBaseRight = document.getElementById("shirtBaseRight");
 const designOverlayRight = document.getElementById("designOverlayRight");
 const buttonsRight = document.querySelectorAll(".shirt-buttonR");
@@ -127,10 +144,12 @@ function updateDesignSelectorVisibilityRight() {
     if(isFrontRight) {
         rightDesignSelectFront.style.display = "block";
         rightDesignSelectBack.style.display = "none";
+        designSelectLightRight.style.display = "block";
         shirtSideRight.textContent = "Front"
     } else {
         rightDesignSelectFront.style.display = "none"
         rightDesignSelectBack.style.display = "block"
+        designSelectLightRight.style.display = "none";
         shirtSideRight.textContent = "Back"
     }
 }
@@ -157,6 +176,12 @@ rightDesignSelectFront.addEventListener("change", () => {
     currentDesignRight = rightDesignSelectFront.value;
     if (isFrontRight) updateDesignImageRight();
 })
+
+designSelectLightRight.addEventListener("change", () => {
+    currentDesignRight = designSelectLightRight.value;
+    if (isFrontRight) updateDesignImageRight();
+})
+
 
 rightDesignSelectBack.addEventListener("change", () => {
     currentDesignRight = rightDesignSelectBack.value;
