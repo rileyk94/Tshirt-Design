@@ -205,3 +205,12 @@ button {
     text-align: center;
     font-weight: bold;
 }
+
+/*---------------------------------------------------------------
+Background Stylinge
+------------------------------------------------------------------*/
+.picture {
+    border: solid 2px green;
+    min-width: 400px;
+    min-height: 400px;
+}
