@@ -30,14 +30,12 @@ window.addEventListener("load", () => {
     // Set initial design based on default selector
     if (isFront) {
         currentDesign = document.getElementById("designSelectFront").value;
-        currentDesign = document.getElementById("designSelectLight").value;
     } else {
         currentDesign = document.getElementById("designSelectBack").value;
     }
 
     if (isFrontRight) {
         currentDesignRight = document.getElementById("rightDesignSelectFront").value;
-        currentDesign = document.getElementById("designSelectLightRight").value;
     } else {
         currentDesignRight = document.getElementById("rightDesignSelectBack").value;
     }
