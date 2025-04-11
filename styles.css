@@ -91,13 +91,10 @@ button {
 }
 
 /*Front and Back Buttons*/
-.view a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+#toggleView {
     padding: 10px;
-    border: solid 2px black;
     background-color: peachpuff;
+    font-weight: bold;
 }
 
 /*dropdown menu*/
@@ -106,7 +103,8 @@ button {
     margin-top: 30px;
 }
 
-#designSelect {
+#designSelectFront,
+#designSelectBack {
     color: white;
     background-color: black;
     text-align: center;
