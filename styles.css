@@ -99,7 +99,6 @@ button {
 /*dropdown menu*/
 .dropdown {
     margin: 10px;
-    margin-top: 30px;
 }
 
 #designSelectLightRight,
@@ -231,4 +230,26 @@ button {
     width: 100%;
     z-index: 3;
     height: auto;
+}
+
+#designLabel {
+    margin: 5px;
+    font-weight: bold;
+}
+.design-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.design-page .dropdown {
+    margin: 5px;
+}
+
+.design-page
+#designSelect {
+    text-align: center;
+    background-color: palegreen;
+    font-weight: bold;
 }
