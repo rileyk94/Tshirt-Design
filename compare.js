@@ -37,6 +37,45 @@ buttonsFL.forEach(button => {
     })
 })
 
+//Left side cycle images
+// const previousButton = document.getElementById("previous");
+// const nextButton = document.getElementById("next");
+
+// let currentIndex = 0;
+// const lastIndex = backImages.length - 1;
+
+// previousButton.addEventListener("click", function() {
+//     if (currentIndex === 0) {
+//         currentIndex = backImages.length
+//     }
+//     currentIndex = currentIndex-1
+//     designOverlay.src = "./images/back-designs/" + backImages[currentIndex]
+// })
+
+// nextButton.addEventListener("click", function() {
+//     if (currentIndex === lastIndex) {
+//         currentIndex = 0
+//     }
+//     currentIndex = currentIndex+1
+//     designOverlay.src = "./images/back-designs/" + backImages[currentIndex]
+// })
+
+// document.addEventListener('keydown', (event) => {
+//     if (event.key === 'ArrowRight') {
+//         if (currentIndex === lastIndex) {
+//             currentIndex = 0
+//         }
+//         currentIndex = currentIndex+1
+//         designOverlay.src = "./images/back-designs/" + backImages[currentIndex]
+//     }
+//     else if (event.key == 'ArrowLeft') {
+//         if (currentIndex === 0) {
+//             currentIndex = backImages.length
+//         }
+//         currentIndex = currentIndex-1
+//         designOverlay.src = "./images/back-designs/" + backImages[currentIndex]
+//     }
+// })
 
 // Right side Back Script
 // -------------------------------------------
