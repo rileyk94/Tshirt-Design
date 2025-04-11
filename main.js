@@ -14,10 +14,29 @@ let currentDesign = isFront ? "Steampunk-round-badge" : "Cartoon-pride";
 
 const toggleBtn = document.getElementById("toggleView")
 
+window.addEventListener("load", () => {
+    // Reset both dropdowns to first option
+    document.getElementById("designSelectFront").selectedIndex = 0;
+    document.getElementById("designSelectBack").selectedIndex = 0;  
+    // Set initial design based on default selector
+    if (isFront) {
+        currentDesign = document.getElementById("designSelectFront").value;
+    } else {
+        currentDesign = document.getElementById("designSelectBack").value;
+    }
+
+    // Make sure correct selector is visible
+    updateDesignSelectorVisibility();
+  
+    // Load the starting image
+    updateDesignImage();
+  });
+
 updateDesignSelectorVisibility();
 
 toggleBtn.addEventListener("click", () => {
     isFront = !isFront;
+    currentDesign = isFront ? document.getElementById("designSelectFront").value : document.getElementById("designSelectBack").value; 
     updateShirtImage();
     updateDesignImage();
     updateDesignSelectorVisibility();
@@ -81,7 +100,6 @@ const previousButton = document.getElementById("previous");
 const nextButton = document.getElementById("next");
 
 let currentIndex = 0;
-const lastIndex = isFront ? (frontImages.length - 1) : (backImages.length-1);
 
 previousButton.addEventListener("click", function() {
     if (currentIndex === 0) {
@@ -92,8 +110,9 @@ previousButton.addEventListener("click", function() {
 })
 
 nextButton.addEventListener("click", function() {
+    const lastIndex = isFront ? (frontImages.length - 1) : (backImages.length-1);
     if (currentIndex === lastIndex) {
-        currentIndex = 0
+        currentIndex = -1
     }
     currentIndex = currentIndex+1
     designOverlay.src = `./images/${isFront ? 'front-designs/' : 'back-designs/'}${isFront ? frontImages[currentIndex] : backImages[currentIndex]}`
@@ -101,6 +120,7 @@ nextButton.addEventListener("click", function() {
 
 document.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowRight') {
+        const lastIndex = isFront ? (frontImages.length - 1) : (backImages.length-1);
         if (currentIndex === lastIndex) {
             currentIndex = -1
         }
@@ -109,7 +129,7 @@ document.addEventListener('keydown', (event) => {
     }
     else if (event.key == 'ArrowLeft') {
         if (currentIndex === 0) {
-            currentIndex = frontImages.length
+            currentIndex = isFront ? frontImages.length : backImages.length;
         }
         currentIndex = currentIndex-1
         designOverlay.src = `./images/${isFront ? 'front-designs/' : 'back-designs/'}${isFront ? frontImages[currentIndex] : backImages[currentIndex]}`

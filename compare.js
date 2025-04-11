@@ -13,10 +13,41 @@ let isFront = true;
 let currentColor = "White";
 let currentDesign = isFront ? "Steampunk-round-badge" : "Cartoon-pride";
 
+window.addEventListener("load", () => {
+    // Reset both dropdowns to first option
+    document.getElementById("designSelectFront").selectedIndex = 0;
+    document.getElementById("designSelectBack").selectedIndex = 0;
+    document.getElementById("rightDesignSelectFront").selectedIndex = 0;
+    document.getElementById("rightDesignSelectBack").selectedIndex = 0;
+  
+    // Set initial design based on default selector
+    if (isFront) {
+        currentDesign = document.getElementById("designSelectFront").value;
+    } else {
+        currentDesign = document.getElementById("designSelectBack").value;
+    }
+
+    if (isFrontRight) {
+        currentDesignRight = document.getElementById("rightDesignSelectFront").value;
+    } else {
+        currentDesignRight = document.getElementById("rightDesignSelectBack").value;
+    }
+    // Make sure correct selector is visible
+    updateDesignSelectorVisibility();
+    updateDesignSelectorVisibilityRight();
+  
+    // Load the starting image
+    updateDesignImage();
+    updateDesignImageRight();
+  });
+  
 const toggleBtn = document.getElementById("toggleView")
+
 updateDesignSelectorVisibility();
+
 toggleBtn.addEventListener("click", () => {
     isFront = !isFront;
+    currentDesign = isFront ? document.getElementById("designSelectFront").value : document.getElementById("designSelectBack").value; 
     updateShirtImage();
     updateDesignImage();
     updateDesignSelectorVisibility();
@@ -28,12 +59,10 @@ function updateDesignSelectorVisibility() {
         designSelectFront.style.display = "block";
         designSelectBack.style.display = "none";
         shirtSideLeft.textContent = "Front"
-        shirtSideRight.textContent = "Front"
     } else {
         designSelectFront.style.display = "none"
         designSelectBack.style.display = "block"
         shirtSideLeft.textContent = "Back"
-        shirtSideRight.textContent = "Back"
     }
 }
 function updateShirtImage() {
@@ -87,6 +116,7 @@ updateDesignSelectorVisibilityRight();
 
 toggleBtnRight.addEventListener("click", () => {
     isFrontRight = !isFrontRight;
+    currentDesignRight = isFrontRight ? document.getElementById("rightDesignSelectFront").value : document.getElementById("rightDesignSelectBack").value;
     updateShirtImageRight();
     updateDesignImageRight();
     updateDesignSelectorVisibilityRight();
@@ -97,9 +127,11 @@ function updateDesignSelectorVisibilityRight() {
     if(isFrontRight) {
         rightDesignSelectFront.style.display = "block";
         rightDesignSelectBack.style.display = "none";
+        shirtSideRight.textContent = "Front"
     } else {
         rightDesignSelectFront.style.display = "none"
         rightDesignSelectBack.style.display = "block"
+        shirtSideRight.textContent = "Back"
     }
 }
 function updateShirtImageRight() {
@@ -126,7 +158,7 @@ rightDesignSelectFront.addEventListener("change", () => {
     if (isFrontRight) updateDesignImageRight();
 })
 
-rightDesignSelectBackaddEventListener("change", () => {
+rightDesignSelectBack.addEventListener("change", () => {
     currentDesignRight = rightDesignSelectBack.value;
     if (!isFrontRight) updateDesignImageRight();
 })
