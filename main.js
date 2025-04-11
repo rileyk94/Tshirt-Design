@@ -1,10 +1,15 @@
 const designSelectFront = document.getElementById("designSelectFront");
 const designSelectBack = document.getElementById("designSelectBack");
+const designSelectLight = document.getElementById("designSelectLight")
 const shirtBase = document.getElementById("shirtBase");
 const designOverlay = document.getElementById("designOverlay");
 const buttons = document.querySelectorAll(".shirt-button");
 const shirtLabel = document.getElementById("shirtLabel");
-const frontImages = ["Steampunk-round-badge.png","30-green-badge.png","Drawn-round-badge.png","line-round-badge.png","lines-badge.png","pride-badge.png","stay-salty-badge.png","wreath-badge.png","Steampunk-round-large.png","30-green-large.png","Drawn-round-large.png","line-round-large.png","lines-large.png","stay-salty-large.png","wreath-large.png","cartoon-front-anniversary.png","cartoon-front-overlay.png","old-flag-front.png","old-pin-front.png"]
+const frontImages = ["Steampunk-round-badge.png","30-green-badge.png","Drawn-round-badge.png","line-round-badge.png","lines-badge.png","pride-badge.png","stay-salty-badge.png","wreath-badge.png","Steampunk-round-large.png",
+                    "30-green-large.png","Drawn-round-large.png","line-round-large.png","lines-large.png","stay-salty-large.png","wreath-large.png","cartoon-front-anniversary.png","cartoon-front-overlay.png","old-pin-front.png",
+                    "steampunk-badge-light.png", "steampunk-large-light.png","30-green-badge-light.png","30-green-large-light.png","30-vect0r-badge-light.png","30-vect0r-large-light.png","cartoon-30-light.png","cartoon-light.png",
+                    "drawn-badge-light.png","drawn-large-light.png","old-pin-front-light.png","stay-salty-badge-light.png","stay-salty-large-light.png","vector-compass-badge-light.png","vector-compass-large-light.png",
+                    "wreath-badge-light.png","wreath-large-light.png",]
 const backImages = ["Cartoon-pride.png","Cartoon-Red-Pins.png","cartoon-stars.png","Old-Map-Flags.png","Old-Map-Pins.png","pride-map-pins.png"]
 
 //Main Button Functions
@@ -17,10 +22,12 @@ const toggleBtn = document.getElementById("toggleView")
 window.addEventListener("load", () => {
     // Reset both dropdowns to first option
     document.getElementById("designSelectFront").selectedIndex = 0;
-    document.getElementById("designSelectBack").selectedIndex = 0;  
+    document.getElementById("designSelectBack").selectedIndex = 0;
+    document.getElementById("designSelectLight").selectedIndex = 0;   
     // Set initial design based on default selector
     if (isFront) {
         currentDesign = document.getElementById("designSelectFront").value;
+        currentDesign = document.getElementById("designSelectLight").value;
     } else {
         currentDesign = document.getElementById("designSelectBack").value;
     }
@@ -45,11 +52,13 @@ toggleBtn.addEventListener("click", () => {
 
 function updateDesignSelectorVisibility() {
     if(isFront) {
-        designSelectFront.style.display = "block";
+        designSelectFront.style.display = "inline-block";
         designSelectBack.style.display = "none";
+        designSelectLight.style.display = "inline-block";
     } else {
         designSelectFront.style.display = "none"
         designSelectBack.style.display = "block"
+        designSelectLight.style.display = "none";
     }
 }
 function updateShirtImage() {
@@ -73,6 +82,11 @@ buttons.forEach(button => {
 
 designSelectFront.addEventListener("change", () => {
     currentDesign = designSelectFront.value;
+    if (isFront) updateDesignImage();
+})
+
+designSelectLight.addEventListener("change", () => {
+    currentDesign = designSelectLight.value;
     if (isFront) updateDesignImage();
 })
 
