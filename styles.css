@@ -208,11 +208,27 @@ button {
     font-weight: bold;
 }
 
-/*---------------------------------------------------------------
-Background Stylinge
-------------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*-----------------------Design Page Styles----------------------*/
+/*---------------------------------------------------------------*/
+
 .picture {
     border: solid 2px green;
     min-width: 400px;
     min-height: 400px;
+    position: relative;
+}
+
+#colorBase {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    height: auto;
+}
+
+#design {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    height: auto;
 }
