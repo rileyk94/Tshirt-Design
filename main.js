@@ -13,7 +13,9 @@ let currentColor = "White";
 let currentDesign = isFront ? "Steampunk-round-badge" : "Cartoon-pride";
 
 const toggleBtn = document.getElementById("toggleView")
+
 updateDesignSelectorVisibility();
+
 toggleBtn.addEventListener("click", () => {
     isFront = !isFront;
     updateShirtImage();
@@ -38,7 +40,6 @@ function updateShirtImage() {
 }
 
 function updateDesignImage() {
-    currentDesign = isFront ? "Steampunk-round-badge.png" : "Cartoon-pride.png";
     const path = `./images/${isFront ? 'front-designs' : 'back-designs'}/${currentDesign}`;
     designOverlay.src = path;
 }

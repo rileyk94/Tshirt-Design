@@ -43,7 +43,6 @@ function updateShirtImage() {
 }
 
 function updateDesignImage() {
-    currentDesign = isFront ? "Steampunk-round-badge.png" : "Cartoon-pride.png";
     const path = `./images/${isFront ? 'front-designs' : 'back-designs'}/${currentDesign}`;
     designOverlay.src = path;
 }
@@ -110,7 +109,6 @@ function updateShirtImageRight() {
 }
 
 function updateDesignImageRight() {
-    currentDesignRight = isFrontRight ? "Steampunk-round-badge.png" : "Cartoon-pride.png";
     const path = `./images/${isFrontRight ? 'front-designs' : 'back-designs'}/${currentDesignRight}`;
     designOverlayRight.src = path;
 }
