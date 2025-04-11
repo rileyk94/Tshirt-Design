@@ -16,211 +16,202 @@
     </div>
     <div class="main-compare">
         <div class="left">
-            <div class="main-design">
-                <div class="shirt-preview">
-                    <!-- <div class="cycle-buttons">
-                        <button id="previous">< previous</button>
-                        <button id="next">next ></button>
-                    </div>     -->
-                    <img id="shirtBase" src="./images/shirt-backs/White-Back.png" alt="White Back Tshirt Base">
-                    <img id="designOverlay" src="./images/back-designs/Cartoon-pride.png" alt="Cartoon Map of USA with Pride Map Pins">
+            <div class="shirt-preview">
+                <!-- <div class="cycle-buttons">
+                    <button id="previous">< previous</button>
+                    <button id="next">next ></button>
+                </div>     -->
+                <img id="shirtBase" src="./images/shirt-backs/White-Back.png" alt="White Back Tshirt Base">
+                <img id="designOverlay" src="./images/back-designs/Cartoon-pride.png" alt="Cartoon Map of USA with Pride Map Pins">
+            </div>
+            <div class="left-choices">
+                <button id="toggleView">Show Back</button>
+                <div class="dropdownleft">
+                <select id ="designSelectBack">
+                    <option value="Cartoon-pride.png">Back Designs</option>
+                    <option value="Cartoon-pride.png">Cartoon Pride</option>
+                    <option value="Cartoon-Red-Pins.png">Cartoon Pins</option>
+                    <option value="cartoon-stars.png">Cartoon Stars</option>
+                    <option value="Old-Map-Flags.png">Old Map Flags</option>
+                    <option value="Old-Map-Pins.png">Old Map Pins</option>
+                    <option value="pride-map-pins.png">Pride Map</option>
+                </select>
+                <select id ="designSelectFront">
+                        <option value="Steampunk-round-badge.png">Front Designs</option>
+                        <option value="Steampunk-round-badge.png">Steampunk Compass Badge</option>
+                        <option value="30-green-badge.png">30th Green Badge</option>
+                        <option value="Drawn-round-badge.png">Illustrated Compass Badge</option>
+                        <option value="line-round-badge.png">Vector Compass Badge</option>
+                        <option value="lines-badge.png">30th Vector Badge</option>
+                        <option value="pride-badge.png">Pride Badge</option>
+                        <option value="stay-salty-badge.png">Stay Salty Badge</option>
+                        <option value="wreath-badge.png">30th Wreath Badge</option>
+                        <option value="Steampunk-round-large.png">Steampunk Large</option>
+                        <option value="30-green-large.png">30th Green Large</option>
+                        <option value="Drawn-round-large.png">Illustrated Compass Large</option>
+                        <option value="line-round-large.png">Vector Compass Large</option>
+                        <option value="lines-large.png">30th Vector Large</option>
+                        <option value="stay-salty-large.png">Stay Salty Large</option>
+                        <option value="wreath-large.png">30th Wreath Large</option>
+                        <option value="cartoon-front-anniversary.png">Cartoon Map</option>
+                        <option value="cartoon-front-overlay.png">Cartoon 30th Map</option>
+                        <option value="old-flag-front.png">Old Map with Flags</option>
+                        <option value="old-pin-front.png">Old Map with Pins</option>
+                </select>
                 </div>
-                <div class="left-choices">
-                    <button id="toggleView">Show Back</button>
-                    <div class="backleft">
-                        <div class="dropdown">
-                            <select id ="designSelectBack">
-                                <option value="Cartoon-pride.png">Back Designs</option>
-                                <option value="Cartoon-pride.png">Cartoon Pride</option>
-                                <option value="Cartoon-Red-Pins.png">Cartoon Pins</option>
-                                <option value="cartoon-stars.png">Cartoon Stars</option>
-                                <option value="Old-Map-Flags.png">Old Map Flags</option>
-                                <option value="Old-Map-Pins.png">Old Map Pins</option>
-                                <option value="pride-map-pins.png">Pride Map</option>
-                            </select>
-                        </div>
-                        <select id ="designSelectFront">
-                            <option value="Steampunk-round-badge.png">Front Designs</option>
-                            <option value="Steampunk-round-badge.png">Steampunk Compass Badge</option>
-                            <option value="30-green-badge.png">30th Green Badge</option>
-                            <option value="Drawn-round-badge.png">Illustrated Compass Badge</option>
-                            <option value="line-round-badge.png">Vector Compass Badge</option>
-                            <option value="lines-badge.png">30th Vector Badge</option>
-                            <option value="pride-badge.png">Pride Badge</option>
-                            <option value="stay-salty-badge.png">Stay Salty Badge</option>
-                            <option value="wreath-badge.png">30th Wreath Badge</option>
-                            <option value="Steampunk-round-large.png">Steampunk Large</option>
-                            <option value="30-green-large.png">30th Green Large</option>
-                            <option value="Drawn-round-large.png">Illustrated Compass Large</option>
-                            <option value="line-round-large.png">Vector Compass Large</option>
-                            <option value="lines-large.png">30th Vector Large</option>
-                            <option value="stay-salty-large.png">Stay Salty Large</option>
-                            <option value="wreath-large.png">30th Wreath Large</option>
-                            <option value="cartoon-front-anniversary.png">Cartoon Map</option>
-                            <option value="cartoon-front-overlay.png">Cartoon 30th Map</option>
-                            <option value="old-flag-front.png">Old Map with Flags</option>
-                            <option value="old-pin-front.png">Old Map with Pins</option>
-                        </select>
-                        <div class="color-select">
-                            <button class="shirt-button" data-shirt="White-Back.png" data-color="White" style="background-color:#f5f5f5"></button>
-                            <button class="shirt-button" data-shirt="Ash-Back.png" data-color="Ash" style="background-color:#efefef"></button>
-                            <button class="shirt-button" data-shirt="Vintage-White-Back.png" data-color="Vintage-White" style="background-color:#ded9d3"></button>
-                            <button class="shirt-button" data-shirt="Silver-Back.png" data-color="Silver" style="background-color:#b9bbb8"></button>
-                            <button class="shirt-button" data-shirt="Baby-Blue-Back.png" data-color="Baby-Blue" style="background-color:#d4e4f1"></button>
-                            <button class="shirt-button" data-shirt="Ocean-Blue-Back.png" data-color="Ocean-Blue" style="background-color:#6cb0d5"></button>
-                            <button class="shirt-button" data-shirt="Aqua-Back.png" data-color="Aqua" style="background-color:#0292c4"></button>
-                            <button class="shirt-button" data-shirt="Turqouise-Back.png" data-color="Turquoise" style="background-color:#07a2da"></button>
-                            <button class="shirt-button" data-shirt="Heather-Columbia-Blue-Back.png" data-color="Heather-Columbia-Blue" style="background-color:#6290cb"></button>
-                            <button class="shirt-button" data-shirt="Light-Blue-Back.png" data-color="Light-Blue" style="background-color:#a5c1cd"></button>
-                            <button class="shirt-button" data-shirt="Steel-Blue-Back.png" data-color="Steel-Blue" style="background-color:#4f7484"></button>
-                            <button class="shirt-button" data-shirt="Heather-Aqua-Back.png" data-color="Heather-Aqua" style="background-color:#158eb4"></button>
-                            <button class="shirt-button" data-shirt="Heather-Royal-Back.png" data-color="Heather-Royal" style="background-color:#3565ad"></button>
-                            <button class="shirt-button" data-shirt="True-Royal-Back.png" data-color="True-Royal" style="background-color:#034a9c"></button>
-                            <button class="shirt-button" data-shirt="Navy-Back.png" data-color="Navy" style="background-color:#1d2f47"></button>
-                            <button class="shirt-button" data-shirt="Navy-Heather-Back.png" data-color="Navy-Heather" style="background-color:#303f52"></button>
-                            <button class="shirt-button" data-shirt="Heather-Mint-Back.png" data-color="Heather-Mint" style="background-color:#a8efdf"></button>
-                            <button class="shirt-button" data-shirt="Leaf-Back.png" data-color="Leaf" style="background-color:#549a5c"></button>
-                            <button class="shirt-button" data-shirt="Heather-Kelly-Back.png" data-color="Heather-Kelly" style="background-color:#069a6a"></button>
-                            <button class="shirt-button" data-shirt="Forest-Back.png" data-color="Forest" style="background-color:#11503f"></button>
-                            <button class="shirt-button" data-shirt="Kelly-Back.png" data-color="Kelly" style="background-color:#077e56"></button>
-                            <button class="shirt-button" data-shirt="Army-Back.png" data-color="Army" style="background-color:#4f5241"></button>
-                            <button class="shirt-button" data-shirt="Military-Green-Back.png" data-color="Military-Green" style="background-color:#4b584f"></button>
-                            <button class="shirt-button" data-shirt="Olive-Back.png" data-color="Olive" style="background-color:#454d24"></button>
-                            <button class="shirt-button" data-shirt="Heather-Olive-Back.png" data-color="Heather-Olive" style="background-color:#717052"></button>
-                            <button class="shirt-button" data-shirt="Heather-Green-Back.png" data-color="Heather-Green" style="background-color:#97b076"></button>
-                            <button class="shirt-button" data-shirt="Black-Back.png" data-color="Black" style="background-color:#252525"></button>
-                            <button class="shirt-button" data-shirt="Solid-Black-Blend-Back.png" data-color="Solid-Black-Blend" style="background-color:#191516"></button>
-                            <button class="shirt-button" data-shirt="Black-Heather-Back.png" data-color="Black-Heather" style="background-color:#0f0f0f"></button>
-                            <button class="shirt-button" data-shirt="Dark-Grey-Back.png" data-color="Dark-Grey" style="background-color:#303636"></button>
-                            <button class="shirt-button" data-shirt="Dark-Heather-Gray-Back.png" data-color="Dark-Heather-Gray" style="background-color:#494542"></button>
-                            <button class="shirt-button" data-shirt="Deep-Heather-Back.png" data-color="Deep-Heather" style="background-color:#707070"></button>
-                            <button class="shirt-button" data-shirt="Asphalt-Back.png" data-color="Asphalt" style="background-color:#444444"></button>
-                            <button class="shirt-button" data-shirt="Brown-Back.png" data-color="Brown" style="background-color:#282222"></button>
-                            <button class="shirt-button" data-shirt="Heather-Clay-Back.png" data-color="Heather-Clay" style="background-color:#945244"></button>
-                            <button class="shirt-button" data-shirt="Soft-Cream-Back.png" data-color="Soft-Cream" style="background-color:#d5bf9a"></button>
-                            <button class="shirt-button" data-shirt="Heather-Peach-Back.png" data-color="Heather-Peach" style="background-color:#fac498"></button>
-                            <button class="shirt-button" data-shirt="Mauve-Back.png" data-color="Mauve" style="background-color:#a4696b"></button>
-                            <button class="shirt-button" data-shirt="Canvas-Red-Back.png" data-color="Canvas-Red" style="background-color:#ae1e35"></button>
-                            <button class="shirt-button" data-shirt="Cardinal-Back.png" data-color="Cardinal" style="background-color:#af3147"></button>
-                            <button class="shirt-button" data-shirt="Red-Back.png" data-color="Red" style="background-color:#cb0529"></button>
-                            <button class="shirt-button" data-shirt="Maroon-Back.png" data-color="Maroon" style="background-color:#5d1f36"></button>
-                            <button class="shirt-button" data-shirt="Team-Purple-Back.png" data-color="Team-Purple" style="background-color:#37194d"></button>
-                            <button class="shirt-button" data-shirt="Heather-Team-Purple-Back.png" data-color="Heather-Team-Purple" style="background-color:#916fb9"></button>
-                            <button class="shirt-button" data-shirt="Berry-Back.png" data-color="Berry" style="background-color:#c13e84"></button>
-                            <button class="shirt-button" data-shirt="Charity-Pink-Back.png" data-color="Charity-Pink" style="background-color:#ec6391"></button>
-                            <button class="shirt-button" data-shirt="Pink-Back.png" data-color="Pink" style="background-color:#ffd4dd"></button>
-                            <button class="shirt-button" data-shirt="Orange-Back.png" data-color="Orange" style="background-color:#fe6637"></button>
-                            <button class="shirt-button" data-shirt="Autumn-Back.png" data-color="Autumn" style="background-color:#b8552b"></button>
-                            <button class="shirt-button" data-shirt="Gold-Back.png" data-color="Gold" style="background-color:#feae19"></button>
-                            <button class="shirt-button" data-shirt="Yellow-Back.png" data-color="Yellow" style="background-color:#ffe876"></button>
-                            <button class="shirt-button" data-shirt="Natural-Back.png" data-color="Natural" style="background-color:#f7e7c3"></button>
-                        </div>
-                        <p id="shirtLabel">White</p>
-                    </div>
-                    </div>
+                <div class="color-select">
+                        <button class="shirt-button" data-shirt="White-Back.png" data-color="White" style="background-color:#f5f5f5"></button>
+                        <button class="shirt-button" data-shirt="Ash-Back.png" data-color="Ash" style="background-color:#efefef"></button>
+                        <button class="shirt-button" data-shirt="Vintage-White-Back.png" data-color="Vintage-White" style="background-color:#ded9d3"></button>
+                        <button class="shirt-button" data-shirt="Silver-Back.png" data-color="Silver" style="background-color:#b9bbb8"></button>
+                        <button class="shirt-button" data-shirt="Baby-Blue-Back.png" data-color="Baby-Blue" style="background-color:#d4e4f1"></button>
+                        <button class="shirt-button" data-shirt="Ocean-Blue-Back.png" data-color="Ocean-Blue" style="background-color:#6cb0d5"></button>
+                        <button class="shirt-button" data-shirt="Aqua-Back.png" data-color="Aqua" style="background-color:#0292c4"></button>
+                        <button class="shirt-button" data-shirt="Turqouise-Back.png" data-color="Turquoise" style="background-color:#07a2da"></button>
+                        <button class="shirt-button" data-shirt="Heather-Columbia-Blue-Back.png" data-color="Heather-Columbia-Blue" style="background-color:#6290cb"></button>
+                        <button class="shirt-button" data-shirt="Light-Blue-Back.png" data-color="Light-Blue" style="background-color:#a5c1cd"></button>
+                        <button class="shirt-button" data-shirt="Steel-Blue-Back.png" data-color="Steel-Blue" style="background-color:#4f7484"></button>
+                        <button class="shirt-button" data-shirt="Heather-Aqua-Back.png" data-color="Heather-Aqua" style="background-color:#158eb4"></button>
+                        <button class="shirt-button" data-shirt="Heather-Royal-Back.png" data-color="Heather-Royal" style="background-color:#3565ad"></button>
+                        <button class="shirt-button" data-shirt="True-Royal-Back.png" data-color="True-Royal" style="background-color:#034a9c"></button>
+                        <button class="shirt-button" data-shirt="Navy-Back.png" data-color="Navy" style="background-color:#1d2f47"></button>
+                        <button class="shirt-button" data-shirt="Navy-Heather-Back.png" data-color="Navy-Heather" style="background-color:#303f52"></button>
+                        <button class="shirt-button" data-shirt="Heather-Mint-Back.png" data-color="Heather-Mint" style="background-color:#a8efdf"></button>
+                        <button class="shirt-button" data-shirt="Leaf-Back.png" data-color="Leaf" style="background-color:#549a5c"></button>
+                        <button class="shirt-button" data-shirt="Heather-Kelly-Back.png" data-color="Heather-Kelly" style="background-color:#069a6a"></button>
+                        <button class="shirt-button" data-shirt="Forest-Back.png" data-color="Forest" style="background-color:#11503f"></button>
+                        <button class="shirt-button" data-shirt="Kelly-Back.png" data-color="Kelly" style="background-color:#077e56"></button>
+                        <button class="shirt-button" data-shirt="Army-Back.png" data-color="Army" style="background-color:#4f5241"></button>
+                        <button class="shirt-button" data-shirt="Military-Green-Back.png" data-color="Military-Green" style="background-color:#4b584f"></button>
+                        <button class="shirt-button" data-shirt="Olive-Back.png" data-color="Olive" style="background-color:#454d24"></button>
+                        <button class="shirt-button" data-shirt="Heather-Olive-Back.png" data-color="Heather-Olive" style="background-color:#717052"></button>
+                        <button class="shirt-button" data-shirt="Heather-Green-Back.png" data-color="Heather-Green" style="background-color:#97b076"></button>
+                        <button class="shirt-button" data-shirt="Black-Back.png" data-color="Black" style="background-color:#252525"></button>
+                        <button class="shirt-button" data-shirt="Solid-Black-Blend-Back.png" data-color="Solid-Black-Blend" style="background-color:#191516"></button>
+                        <button class="shirt-button" data-shirt="Black-Heather-Back.png" data-color="Black-Heather" style="background-color:#0f0f0f"></button>
+                        <button class="shirt-button" data-shirt="Dark-Grey-Back.png" data-color="Dark-Grey" style="background-color:#303636"></button>
+                        <button class="shirt-button" data-shirt="Dark-Heather-Gray-Back.png" data-color="Dark-Heather-Gray" style="background-color:#494542"></button>
+                        <button class="shirt-button" data-shirt="Deep-Heather-Back.png" data-color="Deep-Heather" style="background-color:#707070"></button>
+                        <button class="shirt-button" data-shirt="Asphalt-Back.png" data-color="Asphalt" style="background-color:#444444"></button>
+                        <button class="shirt-button" data-shirt="Brown-Back.png" data-color="Brown" style="background-color:#282222"></button>
+                        <button class="shirt-button" data-shirt="Heather-Clay-Back.png" data-color="Heather-Clay" style="background-color:#945244"></button>
+                        <button class="shirt-button" data-shirt="Soft-Cream-Back.png" data-color="Soft-Cream" style="background-color:#d5bf9a"></button>
+                        <button class="shirt-button" data-shirt="Heather-Peach-Back.png" data-color="Heather-Peach" style="background-color:#fac498"></button>
+                        <button class="shirt-button" data-shirt="Mauve-Back.png" data-color="Mauve" style="background-color:#a4696b"></button>
+                        <button class="shirt-button" data-shirt="Canvas-Red-Back.png" data-color="Canvas-Red" style="background-color:#ae1e35"></button>
+                        <button class="shirt-button" data-shirt="Cardinal-Back.png" data-color="Cardinal" style="background-color:#af3147"></button>
+                        <button class="shirt-button" data-shirt="Red-Back.png" data-color="Red" style="background-color:#cb0529"></button>
+                        <button class="shirt-button" data-shirt="Maroon-Back.png" data-color="Maroon" style="background-color:#5d1f36"></button>
+                        <button class="shirt-button" data-shirt="Team-Purple-Back.png" data-color="Team-Purple" style="background-color:#37194d"></button>
+                        <button class="shirt-button" data-shirt="Heather-Team-Purple-Back.png" data-color="Heather-Team-Purple" style="background-color:#916fb9"></button>
+                        <button class="shirt-button" data-shirt="Berry-Back.png" data-color="Berry" style="background-color:#c13e84"></button>
+                        <button class="shirt-button" data-shirt="Charity-Pink-Back.png" data-color="Charity-Pink" style="background-color:#ec6391"></button>
+                        <button class="shirt-button" data-shirt="Pink-Back.png" data-color="Pink" style="background-color:#ffd4dd"></button>
+                        <button class="shirt-button" data-shirt="Orange-Back.png" data-color="Orange" style="background-color:#fe6637"></button>
+                        <button class="shirt-button" data-shirt="Autumn-Back.png" data-color="Autumn" style="background-color:#b8552b"></button>
+                        <button class="shirt-button" data-shirt="Gold-Back.png" data-color="Gold" style="background-color:#feae19"></button>
+                        <button class="shirt-button" data-shirt="Yellow-Back.png" data-color="Yellow" style="background-color:#ffe876"></button>
+                        <button class="shirt-button" data-shirt="Natural-Back.png" data-color="Natural" style="background-color:#f7e7c3"></button>
                 </div>
+                <p id="shirtLabel">White</p>
             </div>
         </div>
         <div class="right">
-            <div class="main-design">
-                <div class="shirt-preview">
-                    <img id="shirtBaseRight" src="./images/shirt-backs/White-Back.png" alt="White Back Tshirt Base">
-                    <img id="designOverlayRight" src="./images/back-designs/Cartoon-pride.png" alt="Cartoon Map of USA with Pride Map Pins">    
-                </div>
-                <div class="right-choices">
-                    <button id="toggleViewRight">Show Back</button>
-                    <div class="backright">
-                        <div class="dropdown">
-                            <select id ="rightDesignSelectBack">
-                                <option value="Cartoon-pride.png">Back Designs</option>
-                                <option value="Cartoon-pride.png">Cartoon Pride</option>
-                                <option value="Cartoon-Red-Pins.png">Cartoon Pins</option>
-                                <option value="cartoon-stars.png">Cartoon Stars</option>
-                                <option value="Old-Map-Flags.png">Old Map Flags</option>
-                                <option value="Old-Map-Pins.png">Old Map Pins</option>
-                                <option value="pride-map-pins.png">Pride Map</option>
-                            </select>
-                            <select id ="rightDesignSelectFront">
-                                <option value="Steampunk-round-badge.png">Front Designs</option>
-                                <option value="Steampunk-round-badge.png">Steampunk Compass Badge</option>
-                                <option value="30-green-badge.png">30th Green Badge</option>
-                                <option value="Drawn-round-badge.png">Illustrated Compass Badge</option>
-                                <option value="line-round-badge.png">Vector Compass Badge</option>
-                                <option value="lines-badge.png">30th Vector Badge</option>
-                                <option value="pride-badge.png">Pride Badge</option>
-                                <option value="stay-salty-badge.png">Stay Salty Badge</option>
-                                <option value="wreath-badge.png">30th Wreath Badge</option>
-                                <option value="Steampunk-round-large.png">Steampunk Large</option>
-                                <option value="30-green-large.png">30th Green Large</option>
-                                <option value="Drawn-round-large.png">Illustrated Compass Large</option>
-                                <option value="line-round-large.png">Vector Compass Large</option>
-                                <option value="lines-large.png">30th Vector Large</option>
-                                <option value="stay-salty-large.png">Stay Salty Large</option>
-                                <option value="wreath-large.png">30th Wreath Large</option>
-                                <option value="cartoon-front-anniversary.png">Cartoon Map</option>
-                                <option value="cartoon-front-overlay.png">Cartoon 30th Map</option>
-                                <option value="old-flag-front.png">Old Map with Flags</option>
-                                <option value="old-pin-front.png">Old Map with Pins</option>
-                            </select>
-                        </div>        
-                        <div class="color-select">
-                            <button class="shirt-buttonR" data-shirt="White-Back.png" data-colorR="White" style="background-color:#f5f5f5"></button>
-                            <button class="shirt-buttonR" data-shirt="Ash-Back.png" data-colorR="Ash" style="background-color:#efefef"></button>
-                            <button class="shirt-buttonR" data-shirt="Vintage-White-Back.png" data-colorR="Vintage-White" style="background-color:#ded9d3"></button>
-                            <button class="shirt-buttonR" data-shirt="Silver-Back.png" data-colorR="Silver" style="background-color:#b9bbb8"></button>
-                            <button class="shirt-buttonR" data-shirt="Baby-Blue-Back.png" data-colorR="Baby-Blue" style="background-color:#d4e4f1"></button>
-                            <button class="shirt-buttonR" data-shirt="Ocean-Blue-Back.png" data-colorR="Ocean-Blue" style="background-color:#6cb0d5"></button>
-                            <button class="shirt-buttonR" data-shirt="Aqua-Back.png" data-colorR="Aqua" style="background-color:#0292c4"></button>
-                            <button class="shirt-buttonR" data-shirt="Turqouise-Back.png" data-colorR="Turquoise" style="background-color:#07a2da"></button>
-                            <button class="shirt-buttonR" data-shirt="Heather-Columbia-Blue-Back.png" data-colorR="Heather-Columbia-Blue" style="background-color:#6290cb"></button>
-                            <button class="shirt-buttonR" data-shirt="Light-Blue-Back.png" data-colorR="Light-Blue" style="background-color:#a5c1cd"></button>
-                            <button class="shirt-buttonR" data-shirt="Steel-Blue-Back.png" data-colorR="Steel-Blue" style="background-color:#4f7484"></button>
-                            <button class="shirt-buttonR" data-shirt="Heather-Aqua-Back.png" data-colorR="Heather-Aqua" style="background-color:#158eb4"></button>
-                            <button class="shirt-buttonR" data-shirt="Heather-Royal-Back.png" data-colorR="Heather-Royal" style="background-color:#3565ad"></button>
-                            <button class="shirt-buttonR" data-shirt="True-Royal-Back.png" data-colorR="True-Royal" style="background-color:#034a9c"></button>
-                            <button class="shirt-buttonR" data-shirt="Navy-Back.png" data-colorR="Navy" style="background-color:#1d2f47"></button>
-                            <button class="shirt-buttonR" data-shirt="Navy-Heather-Back.png" data-colorR="Navy-Heather" style="background-color:#303f52"></button>
-                            <button class="shirt-buttonR" data-shirt="Heather-Mint-Back.png" data-colorR="Heather-Mint" style="background-color:#a8efdf"></button>
-                            <button class="shirt-buttonR" data-shirt="Leaf-Back.png" data-colorR="Leaf" style="background-color:#549a5c"></button>
-                            <button class="shirt-buttonR" data-shirt="Heather-Kelly-Back.png" data-colorR="Heather-Kelly" style="background-color:#069a6a"></button>
-                            <button class="shirt-buttonR" data-shirt="Forest-Back.png" data-colorR="Forest" style="background-color:#11503f"></button>
-                            <button class="shirt-buttonR" data-shirt="Kelly-Back.png" data-colorR="Kelly" style="background-color:#077e56"></button>
-                            <button class="shirt-buttonR" data-shirt="Army-Back.png" data-colorR="Army" style="background-color:#4f5241"></button>
-                            <button class="shirt-buttonR" data-shirt="Military-Green-Back.png" data-colorR="Military-Green" style="background-color:#4b584f"></button>
-                            <button class="shirt-buttonR" data-shirt="Olive-Back.png" data-colorR="Olive" style="background-color:#454d24"></button>
-                            <button class="shirt-buttonR" data-shirt="Heather-Olive-Back.png" data-colorR="Heather-Olive" style="background-color:#717052"></button>
-                            <button class="shirt-buttonR" data-shirt="Heather-Green-Back.png" data-colorR="Heather-Green" style="background-color:#97b076"></button>
-                            <button class="shirt-buttonR" data-shirt="Black-Back.png" data-colorR="Black" style="background-color:#252525"></button>
-                            <button class="shirt-buttonR" data-shirt="Solid-Black-Blend-Back.png" data-colorR="Solid-Black-Blend" style="background-color:#191516"></button>
-                            <button class="shirt-buttonR" data-shirt="Black-Heather-Back.png" data-colorR="Black-Heather" style="background-color:#0f0f0f"></button>
-                            <button class="shirt-buttonR" data-shirt="Dark-Grey-Back.png" data-colorR="Dark-Grey" style="background-color:#303636"></button>
-                            <button class="shirt-buttonR" data-shirt="Dark-Heather-Gray-Back.png" data-colorR="Dark-Heather-Gray" style="background-color:#494542"></button>
-                            <button class="shirt-buttonR" data-shirt="Deep-Heather-Back.png" data-colorR="Deep-Heather" style="background-color:#707070"></button>
-                            <button class="shirt-buttonR" data-shirt="Asphalt-Back.png" data-colorR="Asphalt" style="background-color:#444444"></button>
-                            <button class="shirt-buttonR" data-shirt="Brown-Back.png" data-colorR="Brown" style="background-color:#282222"></button>
-                            <button class="shirt-buttonR" data-shirt="Heather-Clay-Back.png" data-colorR="Heather-Clay" style="background-color:#945244"></button>
-                            <button class="shirt-buttonR" data-shirt="Soft-Cream-Back.png" data-colorR="Soft-Cream" style="background-color:#d5bf9a"></button>
-                            <button class="shirt-buttonR" data-shirt="Heather-Peach-Back.png" data-colorR="Heather-Peach" style="background-color:#fac498"></button>
-                            <button class="shirt-buttonR" data-shirt="Mauve-Back.png" data-colorR="Mauve" style="background-color:#a4696b"></button>
-                            <button class="shirt-buttonR" data-shirt="Canvas-Red-Back.png" data-colorR="Canvas-Red" style="background-color:#ae1e35"></button>
-                            <button class="shirt-buttonR" data-shirt="Cardinal-Back.png" data-colorR="Cardinal" style="background-color:#af3147"></button>
-                            <button class="shirt-buttonR" data-shirt="Red-Back.png" data-colorR="Red" style="background-color:#cb0529"></button>
-                            <button class="shirt-buttonR" data-shirt="Maroon-Back.png" data-colorR="Maroon" style="background-color:#5d1f36"></button>
-                            <button class="shirt-buttonR" data-shirt="Team-Purple-Back.png" data-colorR="Team-Purple" style="background-color:#37194d"></button>
-                            <button class="shirt-buttonR" data-shirt="Heather-Team-Purple-Back.png" data-colorR="Heather-Team-Purple" style="background-color:#916fb9"></button>
-                            <button class="shirt-buttonR" data-shirt="Berry-Back.png" data-colorR="Berry" style="background-color:#c13e84"></button>
-                            <button class="shirt-buttonR" data-shirt="Charity-Pink-Back.png" data-colorR="Charity-Pink" style="background-color:#ec6391"></button>
-                            <button class="shirt-buttonR" data-shirt="Pink-Back.png" data-colorR="Pink" style="background-color:#ffd4dd"></button>
-                            <button class="shirt-buttonR" data-shirt="Orange-Back.png" data-colorR="Orange" style="background-color:#fe6637"></button>
-                            <button class="shirt-buttonR" data-shirt="Autumn-Back.png" data-colorR="Autumn" style="background-color:#b8552b"></button>
-                            <button class="shirt-buttonR" data-shirt="Gold-Back.png" data-colorR="Gold" style="background-color:#feae19"></button>
-                            <button class="shirt-buttonR" data-shirt="Yellow-Back.png" data-colorR="Yellow" style="background-color:#ffe876"></button>
-                            <button class="shirt-buttonR" data-shirt="Natural-Back.png" data-colorR="Natural" style="background-color:#f7e7c3"></button>
-                        </div>
-                        <p id="shirtLabelRight">White</p>
-                    </div>
-                </div>
+            <div class="shirt-preview">
+                <img id="shirtBaseRight" src="./images/shirt-backs/White-Back.png" alt="White Back Tshirt Base">
+                <img id="designOverlayRight" src="./images/back-designs/Cartoon-pride.png" alt="Cartoon Map of USA with Pride Map Pins">    
             </div>
+            <div class="right-choices">
+                <button id="toggleViewRight">Show Back</button>
+                <div class="dropdown">
+                    <select id ="rightDesignSelectBack">
+                        <option value="Cartoon-pride.png">Back Designs</option>
+                        <option value="Cartoon-pride.png">Cartoon Pride</option>
+                        <option value="Cartoon-Red-Pins.png">Cartoon Pins</option>
+                        <option value="cartoon-stars.png">Cartoon Stars</option>
+                        <option value="Old-Map-Flags.png">Old Map Flags</option>
+                        <option value="Old-Map-Pins.png">Old Map Pins</option>
+                        <option value="pride-map-pins.png">Pride Map</option>
+                    </select>
+                    <select id ="rightDesignSelectFront">
+                        <option value="Steampunk-round-badge.png">Front Designs</option>
+                        <option value="Steampunk-round-badge.png">Steampunk Compass Badge</option>
+                        <option value="30-green-badge.png">30th Green Badge</option>
+                        <option value="Drawn-round-badge.png">Illustrated Compass Badge</option>
+                        <option value="line-round-badge.png">Vector Compass Badge</option>
+                        <option value="lines-badge.png">30th Vector Badge</option>
+                        <option value="pride-badge.png">Pride Badge</option>
+                        <option value="stay-salty-badge.png">Stay Salty Badge</option>
+                        <option value="wreath-badge.png">30th Wreath Badge</option>
+                        <option value="Steampunk-round-large.png">Steampunk Large</option>
+                        <option value="30-green-large.png">30th Green Large</option>
+                        <option value="Drawn-round-large.png">Illustrated Compass Large</option>
+                        <option value="line-round-large.png">Vector Compass Large</option>
+                        <option value="lines-large.png">30th Vector Large</option>
+                        <option value="stay-salty-large.png">Stay Salty Large</option>
+                        <option value="wreath-large.png">30th Wreath Large</option>
+                        <option value="cartoon-front-anniversary.png">Cartoon Map</option>
+                        <option value="cartoon-front-overlay.png">Cartoon 30th Map</option>
+                        <option value="old-flag-front.png">Old Map with Flags</option>
+                        <option value="old-pin-front.png">Old Map with Pins</option>
+                    </select>
+                </div>        
+                <div class="color-select">
+                    <button class="shirt-buttonR" data-shirt="White-Back.png" data-colorR="White" style="background-color:#f5f5f5"></button>
+                    <button class="shirt-buttonR" data-shirt="Ash-Back.png" data-colorR="Ash" style="background-color:#efefef"></button>
+                    <button class="shirt-buttonR" data-shirt="Vintage-White-Back.png" data-colorR="Vintage-White" style="background-color:#ded9d3"></button>
+                    <button class="shirt-buttonR" data-shirt="Silver-Back.png" data-colorR="Silver" style="background-color:#b9bbb8"></button>
+                    <button class="shirt-buttonR" data-shirt="Baby-Blue-Back.png" data-colorR="Baby-Blue" style="background-color:#d4e4f1"></button>
+                    <button class="shirt-buttonR" data-shirt="Ocean-Blue-Back.png" data-colorR="Ocean-Blue" style="background-color:#6cb0d5"></button>
+                    <button class="shirt-buttonR" data-shirt="Aqua-Back.png" data-colorR="Aqua" style="background-color:#0292c4"></button>
+                    <button class="shirt-buttonR" data-shirt="Turqouise-Back.png" data-colorR="Turquoise" style="background-color:#07a2da"></button>
+                    <button class="shirt-buttonR" data-shirt="Heather-Columbia-Blue-Back.png" data-colorR="Heather-Columbia-Blue" style="background-color:#6290cb"></button>
+                    <button class="shirt-buttonR" data-shirt="Light-Blue-Back.png" data-colorR="Light-Blue" style="background-color:#a5c1cd"></button>
+                    <button class="shirt-buttonR" data-shirt="Steel-Blue-Back.png" data-colorR="Steel-Blue" style="background-color:#4f7484"></button>
+                    <button class="shirt-buttonR" data-shirt="Heather-Aqua-Back.png" data-colorR="Heather-Aqua" style="background-color:#158eb4"></button>
+                    <button class="shirt-buttonR" data-shirt="Heather-Royal-Back.png" data-colorR="Heather-Royal" style="background-color:#3565ad"></button>
+                    <button class="shirt-buttonR" data-shirt="True-Royal-Back.png" data-colorR="True-Royal" style="background-color:#034a9c"></button>
+                    <button class="shirt-buttonR" data-shirt="Navy-Back.png" data-colorR="Navy" style="background-color:#1d2f47"></button>
+                    <button class="shirt-buttonR" data-shirt="Navy-Heather-Back.png" data-colorR="Navy-Heather" style="background-color:#303f52"></button>
+                    <button class="shirt-buttonR" data-shirt="Heather-Mint-Back.png" data-colorR="Heather-Mint" style="background-color:#a8efdf"></button>
+                    <button class="shirt-buttonR" data-shirt="Leaf-Back.png" data-colorR="Leaf" style="background-color:#549a5c"></button>
+                    <button class="shirt-buttonR" data-shirt="Heather-Kelly-Back.png" data-colorR="Heather-Kelly" style="background-color:#069a6a"></button>
+                    <button class="shirt-buttonR" data-shirt="Forest-Back.png" data-colorR="Forest" style="background-color:#11503f"></button>
+                    <button class="shirt-buttonR" data-shirt="Kelly-Back.png" data-colorR="Kelly" style="background-color:#077e56"></button>
+                    <button class="shirt-buttonR" data-shirt="Army-Back.png" data-colorR="Army" style="background-color:#4f5241"></button>
+                    <button class="shirt-buttonR" data-shirt="Military-Green-Back.png" data-colorR="Military-Green" style="background-color:#4b584f"></button>
+                    <button class="shirt-buttonR" data-shirt="Olive-Back.png" data-colorR="Olive" style="background-color:#454d24"></button>
+                    <button class="shirt-buttonR" data-shirt="Heather-Olive-Back.png" data-colorR="Heather-Olive" style="background-color:#717052"></button>
+                    <button class="shirt-buttonR" data-shirt="Heather-Green-Back.png" data-colorR="Heather-Green" style="background-color:#97b076"></button>
+                    <button class="shirt-buttonR" data-shirt="Black-Back.png" data-colorR="Black" style="background-color:#252525"></button>
+                    <button class="shirt-buttonR" data-shirt="Solid-Black-Blend-Back.png" data-colorR="Solid-Black-Blend" style="background-color:#191516"></button>
+                    <button class="shirt-buttonR" data-shirt="Black-Heather-Back.png" data-colorR="Black-Heather" style="background-color:#0f0f0f"></button>
+                    <button class="shirt-buttonR" data-shirt="Dark-Grey-Back.png" data-colorR="Dark-Grey" style="background-color:#303636"></button>
+                    <button class="shirt-buttonR" data-shirt="Dark-Heather-Gray-Back.png" data-colorR="Dark-Heather-Gray" style="background-color:#494542"></button>
+                    <button class="shirt-buttonR" data-shirt="Deep-Heather-Back.png" data-colorR="Deep-Heather" style="background-color:#707070"></button>
+                    <button class="shirt-buttonR" data-shirt="Asphalt-Back.png" data-colorR="Asphalt" style="background-color:#444444"></button>
+                    <button class="shirt-buttonR" data-shirt="Brown-Back.png" data-colorR="Brown" style="background-color:#282222"></button>
+                    <button class="shirt-buttonR" data-shirt="Heather-Clay-Back.png" data-colorR="Heather-Clay" style="background-color:#945244"></button>
+                    <button class="shirt-buttonR" data-shirt="Soft-Cream-Back.png" data-colorR="Soft-Cream" style="background-color:#d5bf9a"></button>
+                    <button class="shirt-buttonR" data-shirt="Heather-Peach-Back.png" data-colorR="Heather-Peach" style="background-color:#fac498"></button>
+                    <button class="shirt-buttonR" data-shirt="Mauve-Back.png" data-colorR="Mauve" style="background-color:#a4696b"></button>
+                    <button class="shirt-buttonR" data-shirt="Canvas-Red-Back.png" data-colorR="Canvas-Red" style="background-color:#ae1e35"></button>
+                    <button class="shirt-buttonR" data-shirt="Cardinal-Back.png" data-colorR="Cardinal" style="background-color:#af3147"></button>
+                    <button class="shirt-buttonR" data-shirt="Red-Back.png" data-colorR="Red" style="background-color:#cb0529"></button>
+                    <button class="shirt-buttonR" data-shirt="Maroon-Back.png" data-colorR="Maroon" style="background-color:#5d1f36"></button>
+                    <button class="shirt-buttonR" data-shirt="Team-Purple-Back.png" data-colorR="Team-Purple" style="background-color:#37194d"></button>
+                    <button class="shirt-buttonR" data-shirt="Heather-Team-Purple-Back.png" data-colorR="Heather-Team-Purple" style="background-color:#916fb9"></button>
+                    <button class="shirt-buttonR" data-shirt="Berry-Back.png" data-colorR="Berry" style="background-color:#c13e84"></button>
+                    <button class="shirt-buttonR" data-shirt="Charity-Pink-Back.png" data-colorR="Charity-Pink" style="background-color:#ec6391"></button>
+                    <button class="shirt-buttonR" data-shirt="Pink-Back.png" data-colorR="Pink" style="background-color:#ffd4dd"></button>
+                    <button class="shirt-buttonR" data-shirt="Orange-Back.png" data-colorR="Orange" style="background-color:#fe6637"></button>
+                    <button class="shirt-buttonR" data-shirt="Autumn-Back.png" data-colorR="Autumn" style="background-color:#b8552b"></button>
+                    <button class="shirt-buttonR" data-shirt="Gold-Back.png" data-colorR="Gold" style="background-color:#feae19"></button>
+                    <button class="shirt-buttonR" data-shirt="Yellow-Back.png" data-colorR="Yellow" style="background-color:#ffe876"></button>
+                    <button class="shirt-buttonR" data-shirt="Natural-Back.png" data-colorR="Natural" style="background-color:#f7e7c3"></button>
+                </div>
+                <p id="shirtLabelRight">White</p>
+                </div>
         </div>
     </div>
 

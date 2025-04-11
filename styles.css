@@ -79,7 +79,6 @@ button {
     max-width: 300px;
     gap: 5px;
     flex-wrap: wrap;
-    flex: 1;
     justify-content: center;
     z-index: 3;
 }
@@ -145,47 +144,44 @@ button {
     margin: 0 auto;
     justify-content: center;
     flex: 1 1 auto;
-    padding: 10px;
-    
-}
-
-.left .main-design {
-    display: flex;
-    width: 50%;
-    box-sizing: border-box;
-    flex: 1;    
+    padding: 10px;  
 }
 
 .left {
     box-sizing: border-box;
     display: flex;
     flex: 1;
-}
-.right .main-design {
-    display: flex;
     width: 50%;
-    box-sizing: border-box;
-    flex: 1;
 }
 
 .right {
     display: flex;
     flex: 1;
     box-sizing: border-box;
+    width: 50%;
 }
 
+.right-choices, .left-choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*togle styling*/
+#toggleViewRight {
+    padding: 10px;
+    background-color: peachpuff;
+    font-weight: bold;
+}
 /*dropdown styling*/
-.backleft .dropdown,
-.backright .dropdown,
-.frontleft .dropdown,
-.frontright .dropdown {
-    text-align: center;
+.dropdownleft,
+.right-choices .dropdown {
+    margin: 10px;
+    align-self: center;
 }
-
-.frontleft #designSelectFL,
-.frontright #designSelectFR,
-.backright #designSelectRight,
-.backleft #designSelect {
+.leftchoices #designSelectFront,
+.leftchoices #designSelectBack,
+#rightDesignSelectBack,
+#rightDesignSelectFront {
     text-align: center;
     font-weight: bold;
     color: white;
@@ -193,9 +189,7 @@ button {
 }
 
 /*Color Names*/
-#shirtLabelFL,
-#shirtLabelRight,
-#shirtLabelFR {
+#shirtLabelRight {
     text-align: center;
     font-weight: bold;
 }
