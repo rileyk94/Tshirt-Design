@@ -91,6 +91,12 @@ button {
 }
 
 /*Front and Back Buttons*/
+.view {
+    display: flex;
+    width: 363px;
+    justify-content: space-around;
+
+}
 .view a {
     text-decoration: none;
     color: black;
@@ -103,7 +109,12 @@ button {
 /*dropdown menu*/
 .dropdown {
     margin: 10px;
-    margin-top: 30px;
+}
+#designSelect {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: black;
 }
 
 /*Compare Page*/
@@ -183,6 +194,8 @@ button {
 .backleft #designSelect {
     text-align: center;
     font-weight: bold;
+    color: white;
+    background-color: black;
 }
 
 /*Color Names*/
