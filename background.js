@@ -16,3 +16,7 @@ buttons.forEach (button => {
         shirtLabel.textContent = shirtFile;
     })
 })
+
+window.addEventListener ("load", () => {
+    document.getElementById("designSelect").selectedIndex = 0;
+})
