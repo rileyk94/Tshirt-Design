@@ -193,3 +193,10 @@ button {
     text-align: center;
     font-weight: bold;
 }
+
+/*Side Labels*/
+#shirtSideRight, 
+#shirtSideLeft {
+    text-align: center;
+    font-weight: bold;
+}

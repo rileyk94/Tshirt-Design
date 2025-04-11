@@ -6,7 +6,8 @@ const buttons = document.querySelectorAll(".shirt-button");
 const shirtLabel = document.getElementById("shirtLabel");
 const frontImages = ["Steampunk-round-badge.png","30-green-badge.png","Drawn-round-badge.png","line-round-badge.png","lines-badge.png","pride-badge.png","stay-salty-badge.png","wreath-badge.png","Steampunk-round-large.png","30-green-large.png","Drawn-round-large.png","line-round-large.png","lines-large.png","stay-salty-large.png","wreath-large.png","cartoon-front-anniversary.png","cartoon-front-overlay.png","old-flag-front.png","old-pin-front.png"]
 const backImages = ["Cartoon-pride.png","Cartoon-Red-Pins.png","cartoon-stars.png","Old-Map-Flags.png","Old-Map-Pins.png","pride-map-pins.png"]
-
+const shirtSideLeft = document.getElementById("shirtSideLeft")
+const shirtSideRight = document.getElementById("shirtSideRight")
 //Main Button Functions
 let isFront = true;
 let currentColor = "White";
@@ -26,9 +27,13 @@ function updateDesignSelectorVisibility() {
     if(isFront) {
         designSelectFront.style.display = "block";
         designSelectBack.style.display = "none";
+        shirtSideLeft.textContent = "Front"
+        shirtSideRight.textContent = "Front"
     } else {
         designSelectFront.style.display = "none"
         designSelectBack.style.display = "block"
+        shirtSideLeft.textContent = "Back"
+        shirtSideRight.textContent = "Back"
     }
 }
 function updateShirtImage() {
